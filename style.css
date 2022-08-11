@@ -1,0 +1,46 @@
+main{
+   width: 50%;
+   margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+    border: 3px solid tomato;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(10%, 1fr));
+    height: 100vh;
+    grid-gap: 24px;
+}
+
+.anni {
+    grid-column: 5/ span 2;
+}
+
+
+@media only screen and (min-width: 280px){
+    .container{
+        grid-gap: 2.5px;
+    }
+}
+
+@media only screen and (min-width: 360px){
+    .container{
+        grid-gap: 5px;
+    }
+}
+
+@media only screen and (min-width: 375px){
+    .container{
+        grid-gap: 10px;
+    }
+}
+
+
+
